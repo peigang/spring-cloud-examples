@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: eureka-client         # 项目名称用小写
+########################################################
+###连接eureka
+########################################################  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eurekaServer1:8761/eureka/    # 指定注册中心的地址
+
