@@ -1,0 +1,13 @@
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: eurekaServer
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+    enable-self-preservation: false     # 设为false，关闭自我保护
+    eviction-interval-timer-in-ms: 30000     # 清理间隔（单位毫秒，默认是60*1000）
+    renewalPercentThreshold: 0.85
+spring:
+  application:
+    name: eurekaServer
